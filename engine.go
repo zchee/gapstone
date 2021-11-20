@@ -11,6 +11,8 @@ try reading the *_test.go files.
 package gapstone
 
 // #cgo LDFLAGS: -lcapstone
+// #cgo darwin CFLAGS: -I/usr/local/include
+// #cgo darwin LDFLAGS: -L/usr/local/lib
 // #cgo freebsd CFLAGS: -I/usr/local/include
 // #cgo freebsd LDFLAGS: -L/usr/local/lib
 // #include <stdlib.h>
